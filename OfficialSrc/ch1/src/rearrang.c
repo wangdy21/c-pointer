@@ -18,14 +18,14 @@
 
 int	read_column_numbers( int columns[], int max );
 void rearrange( char *output, char const *input,
-	    int n_columns, int const columns[] );
+	    int n_columns, int const columns[] );//函数声明，，函数原型
 
 int main( void )
 {
 	int	n_columns;		/* # of columns to process */
 	int	columns[MAX_COLS];	/* the columns to process */
-	char	input[MAX_INPUT];	/* array for input line */
-	char	output[MAX_INPUT];	/* array for output line */
+	char input[MAX_INPUT];	/* array for input line */
+	char output[MAX_INPUT];	/* array for output line */
 
 	/*
 	** Read the list of column numbers
@@ -74,7 +74,7 @@ int read_column_numbers( int columns[], int max )
 	** number.
 	*/
 	while( (ch = getchar()) != EOF && ch != '\n' )
-		;
+	;
 
 	return num;
 }
